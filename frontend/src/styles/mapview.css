@@ -1,0 +1,82 @@
+/* ======== BACKGROUND ======== */
+.mapview-page {
+  min-height: 100vh;
+  padding: 30px;
+  background: linear-gradient(
+    to bottom,
+    #16384A,
+    #1F4A66,
+    #3D637A,
+    #68839A
+  );
+  font-family: "Poppins", sans-serif;
+  color: #E5E5E5;
+}
+
+/* ======== TITLE ======== */
+.mapview-title {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px rgba(255,255,255,0.3);
+}
+
+/* ======== LEGEND BOX ======== */
+.mapview-legend {
+  position: absolute;
+  top: 110px;
+  right: 40px;
+
+  width: 180px;
+  padding: 15px;
+  border-radius: 12px;
+
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.15);
+  box-shadow: 0 0 25px rgba(0,0,0,0.2);
+}
+
+.mapview-legend h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.legend-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.legend-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.dot-idle { background: #4cd964; }
+.dot-moving { background: #ffd600; }
+.dot-maintenance { background: #ff4d4d; }
+
+/* ======== MAP CONTAINER ======== */
+.mapview-mapbox {
+  height: 75vh;
+  width: 100%;
+  border-radius: 14px;
+  overflow: hidden;
+
+  border: 2px solid rgba(255,255,255,0.3);
+  box-shadow: 0 0 18px rgba(0,0,0,0.3);
+}
+
+/* Leaflet popup styling */
+.leaflet-popup-content-wrapper {
+  background: rgba(22, 56, 74, 0.85);
+  color: white;
+  border-radius: 10px;
+}
+
+.leaflet-popup-tip {
+  background: rgba(22, 56, 74, 0.85);
+}

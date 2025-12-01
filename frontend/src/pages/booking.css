@@ -1,0 +1,217 @@
+/* ============================
+   Container
+============================ */
+.booking-container {
+  padding: 25px;
+  background: #f5f7fa;
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+}
+
+/* ============================
+   Page Title
+============================ */
+.booking-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+/* ============================
+   Add Booking Button
+============================ */
+.btn-add-booking {
+  padding: 10px 18px;
+  background: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+  margin-bottom: 20px;
+}
+
+.btn-add-booking:hover {
+  background: #2980b9;
+}
+
+/* ============================
+   Table Styling
+============================ */
+.booking-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.booking-table th {
+  background: #34495e;
+  color: white;
+  padding: 14px;
+  text-align: left;
+}
+
+.booking-table td {
+  padding: 14px;
+  border-bottom: 1px solid #ecf0f1;
+  color: #2c3e50;
+}
+
+.booking-table tr:hover {
+  background: #f2f4f7;
+}
+
+/* ============================
+   Status Badges
+============================ */
+.status {
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.status.pending {
+  background: #fceec0;
+  color: #c27c0e;
+}
+
+.status.approved {
+  background: #d5f6d5;
+  color: #2d7d31;
+}
+
+.status.rejected {
+  background: #f8d7da;
+  color: #a30015;
+}
+
+/* ============================
+   Action Buttons
+============================ */
+.btn-action {
+  padding: 7px 14px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 13px;
+  transition: 0.3s;
+  margin-right: 6px;
+}
+
+.btn-edit {
+  background: #27ae60;
+}
+
+.btn-edit:hover {
+  background: #1e8449;
+}
+
+.btn-delete {
+  background: #e74c3c;
+}
+
+.btn-delete:hover {
+  background: #c0392b;
+}
+
+/* ============================
+   Modal Background
+============================ */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+/* ============================
+   Modal Box
+============================ */
+.modal-box {
+  background: #fff;
+  width: 450px;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  animation: popIn 0.3s ease;
+}
+
+/* Modal Animation */
+@keyframes popIn {
+  from {
+    transform: scale(0.85);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* ============================
+   Modal Inputs
+============================ */
+.modal-box input,
+.modal-box select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 6px;
+  border: 1px solid #bdc3c7;
+  font-size: 15px;
+  outline: none;
+}
+
+.modal-box input:focus,
+.modal-box select:focus {
+  border-color: #3498db;
+}
+
+/* ============================
+   Modal Buttons
+============================ */
+.modal-buttons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-save {
+  padding: 10px 18px;
+  background: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-save:hover {
+  background: #27ae60;
+}
+
+.btn-cancel {
+  padding: 10px 18px;
+  background: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-cancel:hover {
+  background: #c0392b;
+}

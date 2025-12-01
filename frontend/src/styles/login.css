@@ -1,0 +1,336 @@
+/* 🌆 Background using palette gradient */
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(
+    to bottom,
+    #14344A,
+    #1E4B67,
+    #466D89,
+    #E4E4E4
+  );
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+/* 🏷 Main title */
+.login-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+/* 🌐 Tagline under title */
+.login-tagline {
+  font-size: 15px;
+  color: #111;
+  margin-bottom: 30px;
+  line-height: 22px;
+}
+
+/* 📦 Login/Register card */
+.login-box {
+  margin-bottom: 50px;
+  width: 380px;
+  padding: 30px;
+  border-radius: 16px;
+
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+
+  animation: fadeIn 0.7s ease;
+  transition: transform 0.3s ease;
+}
+
+/* Hover lift effect */
+.login-box:hover {
+  transform: translateY(-4px);
+}
+
+/* 📌 Tabs (Login / Register) */
+.login-tabs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.tab {
+  flex: 1;
+  padding: 10px 0;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #ffffff;
+  transition: 0.25s ease;
+  margin: 0 4px;
+}
+
+.tab.active {
+  background: #ffffff;
+  color: #14344A;
+  font-weight: 600;
+}
+
+.tab:hover {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+/* 🔹 Form grouping (fixes alignment issues) */
+.form-group {
+  margin-bottom: 14px;
+  width: 100%;
+  text-align: left;
+}
+
+/* Form labels */
+.login-label {
+  font-size: 14px;
+  color: #e4e4e4;
+  margin-bottom: 6px;
+  display: block;
+}
+
+/* 🔹 Input fields */
+.login-input,
+.login-box input,
+.login-box select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+
+  border: 1px solid #466d89;
+  background: rgba(255, 255, 255, 0.08);
+
+  color: #e4e4e4;
+  font-size: 15px;
+  transition: 0.3s ease;
+}
+
+.login-input::placeholder {
+  color: #c7c7c7;
+}
+
+.login-input:focus {
+  border-color: #1E4B67;
+  background: rgba(255, 255, 255, 0.18);
+}
+
+/* 🔵 Login button */
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+
+  background: #1E4B67;
+  color: #e4e4e4;
+  font-size: 16px;
+  font-weight: 500;
+
+  cursor: pointer;
+  transition: 0.25s ease;
+  margin-top: 8px;
+}
+
+.login-btn:hover {
+  background: #14344A;
+}
+
+/* ❗ Error message */
+.error-msg {
+  background: rgba(255, 0, 0, 0.15);
+  border-left: 4px solid red;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  color: #ffeaea;
+  text-align: left;
+}
+
+/* Footer text */
+.login-footer {
+  margin-top: 18px;
+  font-size: 14px;
+  color: #000;
+  opacity: 0.8;
+}
+
+/* 🔥 Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Extra section at bottom */
+.login-extra {
+  margin-top: 16px;
+  text-align: center;
+  animation: fadeIn 1s ease;
+}
+
+/* Links */
+.extra-link {
+  color: #000;
+  font-size: 14px;
+  margin: 4px 0;
+}
+
+.extra-link span {
+  color: #1E4B67;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.extra-link span:hover {
+  color: #14344A;
+}
+
+/* Quote */
+.quote-line {
+  font-style: italic;
+  font-size: 13px;
+  color: #000;
+  opacity: 0.75;
+  margin-top: 12px;
+}
+
+/* Version */
+.version-line {
+  font-size: 12px;
+  color: #000;
+  opacity: 0.6;
+  margin-top: 6px;
+}
+
+/* ============================= */
+/* 🌍 ABOUT US SECTION */
+/* ============================= */
+
+.about-section {
+  width: 80%;
+  max-width: 900px;
+  margin: 40px auto 20px auto;
+  text-align: center;
+
+  background: rgba(255, 255, 255, 0.12);
+  padding: 28px;
+  border-radius: 16px;
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.22);
+
+  animation: fadeIn 1s ease;
+}
+
+/* About Us Heading */
+.about-section h2 {
+  color: #000;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+/* Paragraph text */
+.about-section p {
+  color: #111;
+  font-size: 15px;
+  line-height: 22px;
+  margin-bottom: 22px;
+}
+
+/* Features container */
+.about-features {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Individual feature box */
+.feature-box {
+  flex: 1;
+  min-width: 250px;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 18px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.25);
+  transition: 0.3s ease;
+}
+
+.feature-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+}
+
+/* Feature heading */
+.feature-box h3 {
+  color: #14344A;
+  font-size: 17px;
+  margin-bottom: 8px;
+}
+
+/* Feature description */
+.feature-box p {
+  color: #222;
+  font-size: 14px;
+}
+
+/* ============================= */
+/* ✨ Brand Title (NeuroFleetX) */
+/* ============================= */
+
+.brand-title {
+  font-style: italic;
+  font-size: 48px;
+  font-weight: 700;
+  color: #000;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+
+  position: relative;
+  animation: brandFade 1s ease-out;
+}
+
+/* Soft underline */
+.brand-title::after {
+  content: "";
+  width: 130px;
+  height: 4px;
+  background: #14344A; /* your existing palette */
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+  opacity: 0.7;
+}
+
+/* Fade + slide animation */
+@keyframes brandFade {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

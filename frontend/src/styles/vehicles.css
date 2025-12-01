@@ -1,0 +1,138 @@
+/* ---------- COLOR PALETTE ---------- */
+:root {
+  --navy-dark: #16384A;
+  --navy-mid: #1F4A66;
+  --blue-steel: #3D637A;
+  --blue-light: #68839A;
+  --grey-soft: #E5E5E5;
+
+  --text-light: #ffffff;
+  --text-muted: #dce4ec;
+}
+
+/* ---------- PAGE WRAPPER ---------- */
+.vehicles-wrapper {
+  padding: 25px;
+  background: linear-gradient(
+    to bottom,
+    var(--navy-dark),
+    var(--navy-mid),
+    var(--blue-steel),
+    var(--blue-light)
+  );
+  min-height: 100vh;
+  color: var(--text-light);
+  font-family: "Poppins", sans-serif;
+}
+
+/* ---------- HEADING ---------- */
+.vehicles-heading {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 12px 0;
+  border-radius: 12px;
+
+  background: var(--navy-dark);
+  color: var(--grey-soft);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+}
+
+/* ---------- TABLE CONTAINER ---------- */
+.table-container {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.06);
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* ---------- TABLE ---------- */
+.vehicle-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.vehicle-table th {
+  padding: 14px;
+  color: var(--grey-soft);
+  font-size: 14px;
+  background: var(--blue-steel);
+  border-bottom: 2px solid var(--blue-light);
+}
+
+.vehicle-table td {
+  padding: 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Hover effect */
+.vehicle-row:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* ---------- BADGES ---------- */
+.badge-online {
+  background: #4cd964;
+  color: #000;
+  font-weight: bold;
+  padding: 6px 14px;
+  border-radius: 20px;
+}
+
+.badge-offline {
+  background: #d9534f;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* ---------- BARS ---------- */
+.bar-container {
+  width: 100px;
+  height: 10px;
+  background: var(--navy-mid);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.battery-bar {
+  height: 100%;
+  background: #4cd964;
+}
+
+.fuel-bar {
+  height: 100%;
+  background: #f0ad4e;
+}
+
+.percent-text {
+  font-size: 11px;
+  margin-left: 5px;
+  color: var(--text-muted);
+}
+
+/* ---------- BUTTON ---------- */
+.btn-view {
+  padding: 8px 14px;
+  border: none;
+  background: var(--navy-dark);
+  color: var(--grey-soft);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-view:hover {
+  background: var(--navy-mid);
+}
+
+/* NO DATA TEXT */
+.no-data {
+  text-align: center;
+  padding: 20px;
+  color: var(--text-muted);
+}

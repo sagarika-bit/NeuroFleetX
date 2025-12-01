@@ -1,0 +1,134 @@
+/* USERS PAGE STYLING WITH BLUE GRADIENT THEME */
+
+.users-container {
+  padding: 20px;
+  background: linear-gradient(to bottom, #12344a, #1f4b69, #3f6b89, #d9dadc);
+  min-height: 100vh;
+  border-radius: 12px;
+}
+
+/* Section Title */
+.users-title {
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+}
+
+/* Add Button */
+.add-btn {
+  padding: 10px 16px;
+  background: #4caf50;
+  border: none;
+  color: white;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.add-btn:hover {
+  background: #3d8f42;
+}
+
+/* TABLE */
+.users-table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.users-table th {
+  padding: 12px;
+  color: white;
+  background: rgba(0, 0, 0, 0.25);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.users-table td {
+  padding: 12px;
+  color: white;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.users-table tr:hover td {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+/* DELETE BUTTON */
+.delete-btn {
+  padding: 6px 12px;
+  background: #d9534f;
+  border: none;
+  color: white;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: #c9302c;
+}
+
+/* MODAL */
+.users-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-box {
+  background: #ffffff;
+  width: 350px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+}
+
+.modal-box h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.modal-box input,
+.modal-box select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.create-btn {
+  padding: 8px 14px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  padding: 8px 14px;
+  background: #d9534f;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}

@@ -1,0 +1,133 @@
+/* ======== PAGE BACKGROUND ======== */
+.bookings-page {
+  min-height: 100vh;
+  padding: 40px;
+  background: linear-gradient(
+    to bottom,
+    #16384A 0%,
+    #1F4A66 35%,
+    #3D637A 75%,
+    #E5E5E5 100%
+  );
+  font-family: 'Poppins', sans-serif;
+  color: #E9EEF5;
+}
+
+/* ======== TITLE ======== */
+.bookings-title {
+  font-size: 38px;
+  font-weight: 800;
+  margin-bottom: 25px;
+  color: #E5E5E5;
+  text-shadow: 0 0 12px rgba(255, 255, 255, 0.4);
+  letter-spacing: 1px;
+}
+
+/* ======== TABLE CONTAINER (Glass Box) ======== */
+.bookings-container {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 20px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ======== TABLE ======== */
+.bookings-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.bookings-table thead {
+  background: rgba(22, 56, 74, 0.8);
+}
+
+.bookings-table th {
+  padding: 14px;
+  text-align: left;
+  color: #dfe8f1;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+
+.bookings-table td {
+  padding: 14px;
+  background: rgba(255, 255, 255, 0.03);
+  color: #f3f6f9;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  transition: 0.25s;
+}
+
+/* Hover rows */
+.bookings-table tr:hover td {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* ======== STATUS BADGES ======== */
+.status-badge {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  display: inline-block;
+  text-transform: uppercase;
+  animation: pulse 1.8s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.status-pending {
+  background: #ffdd57;
+  color: #333;
+}
+
+.status-approved {
+  background: #22c55e;
+  color: #fff;
+}
+
+.status-rejected {
+  background: #ef4444;
+  color: #fff;
+}
+
+/* ======== ACTION BUTTONS ======== */
+.booking-btn {
+  padding: 8px 14px;
+  background: linear-gradient(145deg, #16384A, #1F4A66);
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.booking-btn:hover {
+  background: linear-gradient(145deg, #1F4A66, #3D637A);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* ======== EMPTY STATE ======== */
+.empty-msg {
+  text-align: center;
+  padding: 40px;
+  font-size: 18px;
+  opacity: 0.8;
+}
